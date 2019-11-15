@@ -6,7 +6,11 @@
   "author": "shailen <shailen@lumkani.com>",
   "license": "MIT",
   "devDependencies": {
-    "vue": "^2.6.10",
-    "ts-node": "^8.5.2"
+    "ts-node": "^8.5.2",
+    "typescript": "^3.7.2",
+    "vue": "^2.6.10"
+  },
+  "scripts": {
+    "prepublish": "npx tsc"
   }
 }

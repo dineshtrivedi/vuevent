@@ -1,6 +1,6 @@
 {
   "name": "vuevent",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "build/index.js",
   "repository": "git@github.com:ShailenNaidoo/vuevent.git",
   "author": "shailen <shailen@lumkani.com>",

@@ -42,6 +42,11 @@ const Vuevent = {
         const { events = {} } = this.$options
         const { document: documentEvents = {}, window: windowEvents = {} } = events
 
+        // @ts-ignore
+        this.$events = {
+          remove: {}
+        }
+
         createEventsFromObject.apply(this as unknown as NewVueConstructor, [documentEvents, document, 'document'])
         createEventsFromObject.apply(this as unknown as NewVueConstructor, [windowEvents, window, 'window'])
       }

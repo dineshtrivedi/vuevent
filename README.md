@@ -7,6 +7,8 @@ description: A nice way of handling global events in Vue components
 
 A nice way of handling global events in Vue components
 
+![](https://img.shields.io/npm/v/vueventjs)
+
 ## Installation
 
 ```shell

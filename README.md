@@ -1,3 +1,8 @@
+---
+title: Vuevent - Handle global events in Vue
+description: A nice way of handling global events in Vue components
+---
+
 # Vuevent
 
 A nice way of handling global events in Vue components

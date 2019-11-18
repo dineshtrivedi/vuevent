@@ -1,6 +1,6 @@
 # Vuevent
 
-A nice way of handling global events in Vue components
+🔥 A nice way of handling global events in Vue components
 
 ![](https://img.shields.io/npm/v/vueventjs)
 ![](https://img.shields.io/npm/dw/vueventjs)

@@ -56,7 +56,7 @@ export default {
       },
     },
     window: {
-      resize() {
+      resize(e) {
         console.log('Event data', e)
         console.log('Vue instance', this)
       }

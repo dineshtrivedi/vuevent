@@ -4,7 +4,7 @@ A nice way of handling global events in Vue components
 
 ![](https://img.shields.io/npm/v/vueventjs)
 ![](https://img.shields.io/npm/dw/vueventjs)
-![](https://shields.io/category/issue-tracking)
+![](https://img.shields.io/github/issues/ShailenNaidoo/vuevent)
 
 ## Installation
 

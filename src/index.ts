@@ -59,11 +59,13 @@ const Vuevent = {
         const windowKeys = Object.keys(windowEvents)
 
         for (const key in documentKeys) {
-          remove.document[key]()
+          // @ts-ignore
+          this.$events.remove.document[key]()
         }
 
         for (const key in windowKeys) {
-          remove.window[key]()
+          // @ts-ignore
+          this.$events.remove.window[key]()
         }
       }
     })

@@ -49,6 +49,22 @@ const Vuevent = {
 
         createEventsFromObject.apply(this as unknown as NewVueConstructor, [documentEvents, document, 'document'])
         createEventsFromObject.apply(this as unknown as NewVueConstructor, [windowEvents, window, 'window'])
+      },
+      beforeDestroy() {
+        // @ts-ignore
+        const { remove = {} } = this.$events
+        const { documentEvents = {}, windowEvents = {} } = remove
+        
+        const documentKeys = Object.keys(documentEvents)
+        const windowKeys = Object.keys(windowEvents)
+
+        for (const key in documentKeys) {
+          remove.document[key]()
+        }
+
+        for (const key in windowKeys) {
+          remove.window[key]()
+        }
       }
     })
   }

@@ -53,7 +53,7 @@ const Vuevent = {
       beforeDestroy() {
         // @ts-ignore
         const { remove = {} } = this.$events
-        const { documentEvents = {}, windowEvents = {} } = remove
+        const { document: documentEvents = {}, window: windowEvents = {} } = remove
         
         const documentKeys = Object.keys(documentEvents)
         const windowKeys = Object.keys(windowEvents)

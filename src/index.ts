@@ -54,4 +54,9 @@ const Vuevent = {
   }
 }
 
+if (window) {
+  // @ts-ignore
+  window.Vuevent = Vuevent
+}
+
 export { Vuevent }

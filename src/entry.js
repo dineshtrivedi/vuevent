@@ -1,12 +1,12 @@
 // Import vue component
-import { GlobalEvents } from './plugin'
+import { Vuevent } from './plugin'
 
 // install function executed by Vue.use()
 const install = function installVuevent(Vue) {
   if (install.installed) return;
   install.installed = true;
   
-  Vue.use(GlobalEvents)
+  Vue.use(Vuevent)
 };
 
 // Create module definition for Vue.use()
@@ -31,7 +31,7 @@ if (GlobalVue) {
 // to be registered via Vue.use() as well as Vue.component()
 
 // Export component by default
-export { GlobalEvents }
+export { Vuevent }
 
 // It's possible to expose named exports when writing components that can
 // also be used as directives, etc. - eg. import { RollupDemoDirective } from 'rollup-demo';

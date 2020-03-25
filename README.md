@@ -8,8 +8,16 @@
 
 ## Installation
 
+#### Via CDN
+
+```html
+<script src="https://unpkg.com/vueventjs@1.0.4/build/index.js"></script>
+```
+
+#### Via NPM
+
 ```shell
-$ yarn add vueventjs
+$ npm install vueventjs --save-dev
 ```
 
 ```javascript

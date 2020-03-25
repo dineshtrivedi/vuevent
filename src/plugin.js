@@ -24,7 +24,7 @@ function createGlobalEvents(targetName, target, events) {
   })
 }
 
-const GlobalEvents = {
+const Vuevent = {
   install(Vue) {
     Vue.mixin({
       beforeCreate() {
@@ -52,4 +52,4 @@ const GlobalEvents = {
   }
 }
 
-export { GlobalEvents }
+export { Vuevent }

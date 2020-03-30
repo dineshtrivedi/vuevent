@@ -36,7 +36,8 @@ const Vuevent = {
          if (!this.$events) {
             this.$events = {
               remove: {
-                window: {}
+                window: {},
+                document: {}
               }
             }
         }

@@ -29,6 +29,15 @@ import { Vuevent } from 'vueventjs'
 Vue.use(Vuevent)
 ```
 
+## Demo
+
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="js,result" data-user="Naidoo" data-slug-hash="xxGMzvB" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Vue Plugin">
+  <span>See the Pen <a href="https://codepen.io/Naidoo/pen/xxGMzvB">
+  Vue Plugin</a> by Shailen (<a href="https://codepen.io/Naidoo">@Naidoo</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 ## Motivation
 
 In Vue we have very easy access to events on **Elements** but it's not so easy to listen to global events within the context of Vue, if we wanted to add a event listener for *pause* we would have to do this:

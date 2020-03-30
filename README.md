@@ -1,6 +1,6 @@
 # Vuevent
 
-🔥 A nice way of handling global events in Vue components. Under *1kb* in size!
+🔥 A nifty way of handling global events in Vue components. Under *3kb* in size!
 
 ![](https://img.shields.io/npm/v/vueventjs)
 ![](https://img.shields.io/npm/dw/vueventjs)
@@ -8,8 +8,18 @@
 
 ## Installation
 
+#### Via CDN
+
+```html
+<script src="https://unpkg.com/vueventjs@1.0.4/build/index.js"></script>
+```
+
+The plugin will automatically register itself using `Vue.use()`
+
+#### Via NPM
+
 ```shell
-$ yarn add vueventjs
+$ npm install vueventjs --save-dev
 ```
 
 ```javascript
@@ -18,6 +28,15 @@ import { Vuevent } from 'vueventjs'
 
 Vue.use(Vuevent)
 ```
+
+## Demo
+
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="js,result" data-user="Naidoo" data-slug-hash="xxGMzvB" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Vue Plugin">
+  <span>See the Pen <a href="https://codepen.io/Naidoo/pen/xxGMzvB">
+  Vue Plugin</a> by Shailen (<a href="https://codepen.io/Naidoo">@Naidoo</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ## Motivation
 
@@ -33,6 +52,9 @@ export default {
   },
   mounted() {
     document.addEventListener('pause', this.onPause)
+  },
+  destroyed() {
+    document.removeEventListener('pause', this.onPause)
   }
 }
 </script>
@@ -95,3 +117,7 @@ export default {
 }
 </script>
 ```
+
+:::tip
+Vuevent automatically removes all listeners that we registered in a component when the component is destroyed
+:::

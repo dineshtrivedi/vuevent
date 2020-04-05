@@ -5,7 +5,7 @@ import { Vuevent } from './plugin'
 const install = function installVuevent(Vue) {
   if (install.installed) return;
   install.installed = true;
-  
+
   Vue.use(Vuevent)
 };
 
